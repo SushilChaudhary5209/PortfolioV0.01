@@ -10,6 +10,7 @@ import CircleProgress from "../components/CircleProgress";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
+import MyPic from '../../images/mypic.png'
 
 function Home() {
   const { theme } = useTheme();
@@ -58,7 +59,7 @@ function Home() {
           <div
             className={`ring ${theme} ring-[8px] ring-[#64ffda] ring-offset-1 ring-offset-slate-50 dark:ring-offset-white w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden`}
           >
-            <img className="" src="/images/mypic.png" alt="" />
+            <img className="" src={MyPic} alt="" />
           </div>
         </div>
       </div>
