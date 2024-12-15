@@ -1,0 +1,232 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+/* src/App.css */
+/* .app {
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app.light {
+  background-color: white;
+  color: black;
+}
+
+.app.dark {
+  background-color: black;
+  color: white;
+} */
+
+/* Ensure the navbar is above other content */
+.navbar {
+  z-index: 1000;
+}
+
+/* Ensure the progress bars are below the navbar */
+.home .progress-bar,
+.home .circle-progress {
+  z-index: 1;
+  position: relative;
+}
+
+/* General App Styles */
+.app {
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app.light {
+  background-color: white;
+  color: black;
+}
+
+.app.dark {
+  background-color: black;
+  color: white;
+}
+
+/* CvButtom Styles */
+.cvButton {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cvButton.light {
+  background-color: #f3f4f6;
+  color: black;
+}
+
+.cvButton.dark {
+  background-color: #1f2937;
+  color: white;
+}
+
+/* NavBar Styles */
+.navbar {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar.light {
+  background-color: #f3f4f6;
+  color: black;
+}
+
+.navbar.dark {
+  background-color: #1f2937;
+  color: white;
+}
+
+/* Footer Styles */
+.footer {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer.light {
+  background-color: #f3f4f6;
+  color: black;
+}
+
+.footer.dark {
+  background-color: #1f2937;
+  color: white;
+}
+
+/* Home Styles */
+.home {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.home.light {
+  background-color: white;
+  color: black;
+}
+
+.home.dark {
+  background-color: #111827;
+  color: white;
+}
+
+/* Home_Ring Styles */
+.ring {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.ring.light {
+  background-color: #f3f4f6;
+  color: black;
+}
+
+.ring.dark {
+  background-color: black;
+  color: white;
+}
+
+/* About Styles */
+.about {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.about.light {
+  background-color: white;
+  color: black;
+}
+
+.about.dark {
+  background-color: #111827;
+  color: white;
+}
+
+/* Service Styles */
+.service {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.service.light {
+  background-color: white;
+  color: black;
+}
+
+.service.dark {
+  background-color: #111827;
+  color: white;
+}
+
+.fadeInScaleUp {
+  animation: fadeInScaleUp linear;
+  animation-timeline: view();
+}
+
+@keyframes fadeInScaleUp {
+  0% {
+    opacity: 0;
+    scale: 0.5;
+  }
+  40% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.card.light {
+  background-color: #f3f4f6;
+  color: black;
+}
+
+.card.dark {
+  background-color: #171717;
+  color: white;
+}
+
+/* Contact Styles */
+.contact {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact.light {
+  background-color: white;
+  color: black;
+}
+
+.contact.dark {
+  background-color: #141414;
+  color: white;
+}
