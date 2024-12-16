@@ -64,6 +64,7 @@ import React, { useState } from 'react';
 import { IoReorderThreeOutline } from "react-icons/io5";
 import ThemeToggle from './ThemeToggle';
 import { useTheme } from './ThemeContext';
+import Profile from "../../images/profile.jpg";
 
 const NavBar = ({ refs }) => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -88,7 +89,7 @@ const NavBar = ({ refs }) => {
             <nav>
                 <div className="py-4 px-2 md:px-8 flex justify-between items-center">
                     <div className="text-xl flex gap-2 items-center">
-                        <img className='h-10 w-10 rounded-full ring-2 ring-red-800 ring-offset-1 ring-offset-slate-50 dark:ring-offset-white' src="/images/profile.jpg" alt="Profile" />
+                        <img className='h-10 w-10 rounded-full ring-2 ring-red-800 ring-offset-1 ring-offset-slate-50 dark:ring-offset-white' src={Profile} alt="Profile" />
                         <span> Sushil Chaudhary </span>
                     </div>
                     <div className="space-x-4 hidden md:flex">

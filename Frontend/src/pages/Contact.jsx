@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
-import { FaSquareFacebook, FaInstagram, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 import './ContactForm.css';
 import { useTheme } from '../components/ThemeContext';
+import { Toaster, toast } from 'react-hot-toast';
 
 function Contact() {
   const { theme } = useTheme();
@@ -43,7 +43,7 @@ function Contact() {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/send', { // Ensure this is your actual domain
+      const response = await fetch('https://portfolio-backebd.vercel.app/send', { // Ensure this is your actual domain
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -52,19 +52,22 @@ function Contact() {
       });
 
       if (response.ok) {
-        alert('Message sent successfully!');
+        toast.success('Message sent successfully!');
       } else {
         const errorData = await response.json();
         setError(errorData.message || 'Failed to send message. Please try again.');
+        toast.error(errorData.message || 'Failed to send message. Please try again.');
       }
     } catch (error) {
       setError('An error occurred. Please try again.');
+      toast.error('An error occurred. Please try again.');
       console.error('Error:', error);
     }
   };
 
   return (
-    <div className={`contact ${theme} overflow-x-hidden pt-4`}>
+    <div className={`contact ${theme} pt-4`}>
+      <Toaster />
       <div className='flex flex-col justify-center items-center md:flex-row'>
         <div className='w-full md:w-[50%] flex flex-col justify-center gap-10 px-4 md:px-20'>
           <div className='flex flex-col gap-10'>

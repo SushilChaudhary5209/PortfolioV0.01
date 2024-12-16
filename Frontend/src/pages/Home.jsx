@@ -10,7 +10,8 @@ import CircleProgress from "../components/CircleProgress";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
-import MyPic from '../../images/mypic.png'
+import MyPic from "../../images/mypic.png";
+import Backend from "../../images/backend.png";
 
 function Home() {
   const { theme } = useTheme();
@@ -63,7 +64,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="flex items-center pt-4 ps-[30%] md:ps-[20%]">
+      <div className="flex items-center pt-8 ps-[30%] md:ps-[20%]">
         <button
           data-aos="fade-right"
           data-aos-offset="120"
@@ -82,118 +83,152 @@ function Home() {
           </span>
         </button>
       </div>
-      <p
-        data-aos="fade-down"
-        data-aos-duration="2000"
-        className="px-4 pt-20 pb-4 md:pt-28 text-4xl font-semibold"
-      >
-        MY SKILL
-      </p>
-      <div className="flex flex-col md:flex-row">
-        <div className="p-4 w-full md:w-1/2 flex flex-col gap-4">
-          <p className="text-3xl font-semibold">Technical Skill</p>
-          <div className="h-full flex itcems-center justify-around flex-wrap">
-            <CircleProgress percent={85} colorFrom="#E53935" colorTo="#E53935" animationDuration={2} delay={0} >
-              <a href="#" className="text-red-600 text-3xl hover:text-red-500">
-                <i className="text-5xl">
-                  <FaHtml5 />
-                  <p className="text-sm">85%</p>
-                </i>
-              </a>
-            </CircleProgress>
-            <CircleProgress percent={75} colorFrom="#1E88E5" colorTo="#1E88E5" animationDuration={2} delay={2} >
-              <a
-                href="#"
-                className="text-blue-600 text-3xl hover:text-blue-500"
+      <div className="pt:12 md:pt-20">
+        <p
+          data-aos="fade-down"
+          data-aos-duration="2000"
+          className="px-4 pt-20 pb-4 md:pt-28 text-4xl font-semibold"
+        >
+          MY SKILL
+        </p>
+        <div className="flex flex-col md:flex-row">
+          <div className="p-4 w-full md:w-1/2 flex flex-col gap-4">
+            <p className="text-3xl font-semibold">Technical Skill</p>
+            <div className="h-full flex itcems-center justify-around flex-wrap">
+              <CircleProgress
+                percent={85}
+                colorFrom="#E53935"
+                colorTo="#E53935"
+                animationDuration={2}
+                delay={0}
               >
-                <i className="text-5xl">
-                  <FaCss3Alt />
-                  <p className="text-sm">75%</p>
-                </i>
-              </a>
-            </CircleProgress>
-            <CircleProgress percent={60} colorFrom="#FFEB3B" colorTo="#FFEB3B" animationDuration={2} delay={4} >
-              <a
-                href="#"
-                className="text-yellow-500 text-3xl hover:text-yellow-400"
-              >
-                <i className="text-5xl">
-                  <IoLogoJavascript />
-                  <p className="text-sm">60%</p>
-                </i>
-              </a>
-            </CircleProgress>
-            <CircleProgress percent={55} colorFrom="#2196F3" colorTo="#2196F3" animationDuration={2} delay={6} >
-              <a
-                href="#"
-                className="text-blue-500 text-3xl hover:text-blue-400"
-              >
-                <i className="text-5xl">
-                  <FaReact />
-                  <p className="text-sm">55%</p>
-                </i>
-              </a>
-            </CircleProgress>
-            <CircleProgress percent={20} colorFrom="#43A047" colorTo="#43A047" animationDuration={2} delay={8} >
-              <a
-                href="#"
-                className="text-green-600 text-3xl hover:text-green-500"
-              >
-                <i className="text-6xl">
-                  <FaNodeJs />
-                  <p className="text-sm">20%</p>
-                </i>
-              </a>
-            </CircleProgress>
-          </div>
-        </div>
-        <div className="p-4 w-full md:w-1/2 flex flex-col gap-4">
-          <p className="text-3xl font-semibold">Professional Skill</p>
-          <div className="flex flex-col gap-8">
-            <div className="flex flex-col gap-2">
-              <p>Creative</p>
-              <ProgressBar
+                <a
+                  href="#"
+                  className="text-red-600 text-3xl hover:text-red-500"
+                >
+                  <i className="text-5xl">
+                    <FaHtml5 />
+                    <p className="text-sm">85%</p>
+                  </i>
+                </a>
+              </CircleProgress>
+              <CircleProgress
                 percent={75}
+                colorFrom="#1E88E5"
+                colorTo="#1E88E5"
+                animationDuration={2}
+                delay={2}
+              >
+                <a
+                  href="#"
+                  className="text-blue-600 text-3xl hover:text-blue-500"
+                >
+                  <i className="text-5xl">
+                    <FaCss3Alt />
+                    <p className="text-sm">75%</p>
+                  </i>
+                </a>
+              </CircleProgress>
+              <CircleProgress
+                percent={60}
+                colorFrom="#FFEB3B"
+                colorTo="#FFEB3B"
+                animationDuration={2}
+                delay={4}
+              >
+                <a
+                  href="#"
+                  className="text-yellow-500 text-3xl hover:text-yellow-400"
+                >
+                  <i className="text-5xl">
+                    <IoLogoJavascript />
+                    <p className="text-sm">60%</p>
+                  </i>
+                </a>
+              </CircleProgress>
+              <CircleProgress
+                percent={55}
+                colorFrom="#2196F3"
+                colorTo="#2196F3"
+                animationDuration={2}
+                delay={6}
+              >
+                <a
+                  href="#"
+                  className="text-blue-500 text-3xl hover:text-blue-400"
+                >
+                  <i className="text-5xl">
+                    <FaReact />
+                    <p className="text-sm">55%</p>
+                  </i>
+                </a>
+              </CircleProgress>
+              <CircleProgress
+                percent={20}
                 colorFrom="#43A047"
                 colorTo="#43A047"
                 animationDuration={2}
-                animationDelay = {0}
-              ></ProgressBar>
+                delay={8}
+              >
+                <a
+                  href="#"
+                  className="text-green-600 text-3xl hover:text-green-500"
+                >
+                  <i className="text-6xl">
+                    <FaNodeJs />
+                    <p className="text-sm">20%</p>
+                  </i>
+                </a>
+              </CircleProgress>
             </div>
-            <div>
-              <p>Communication</p>
-              <ProgressBar
-                percent={90}
-                colorFrom="#108ee9"
-                colorTo="#87d068"
-                animationDuration={2}
-                animationDelay = {2}
-              ></ProgressBar>
-            </div>
-            <div>
-              <p>Problem Solving</p>
-              <ProgressBar
-                percent={70}
-                colorFrom="#108ee9"
-                colorTo="#87d068"
-                animationDuration={2}
-                animationDelay = {4}
-              ></ProgressBar>
-            </div>
-            <div>
-              <p>Teamwork</p>
-              <ProgressBar
-                percent={75}
-                colorFrom="#108ee9"
-                colorTo="#87d068"
-                animationDuration={2}
-                animationDelay = {6}
-              ></ProgressBar>
+          </div>
+          <div className="p-4 w-full md:w-1/2 flex flex-col gap-4">
+            <p className="text-3xl font-semibold">Professional Skill</p>
+            <div className="flex flex-col gap-8">
+              <div className="flex flex-col gap-2">
+                <p>Creative</p>
+                <ProgressBar
+                  percent={75}
+                  colorFrom="#43A047"
+                  colorTo="#43A047"
+                  animationDuration={2}
+                  animationDelay={0}
+                ></ProgressBar>
+              </div>
+              <div>
+                <p>Communication</p>
+                <ProgressBar
+                  percent={90}
+                  colorFrom="#108ee9"
+                  colorTo="#87d068"
+                  animationDuration={2}
+                  animationDelay={2}
+                ></ProgressBar>
+              </div>
+              <div>
+                <p>Problem Solving</p>
+                <ProgressBar
+                  percent={70}
+                  colorFrom="#108ee9"
+                  colorTo="#87d068"
+                  animationDuration={2}
+                  animationDelay={4}
+                ></ProgressBar>
+              </div>
+              <div>
+                <p>Teamwork</p>
+                <ProgressBar
+                  percent={75}
+                  colorFrom="#108ee9"
+                  colorTo="#87d068"
+                  animationDuration={2}
+                  animationDelay={6}
+                ></ProgressBar>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
       <p
         data-aos="fade-down"
         data-aos-duration="2000"
@@ -211,7 +246,7 @@ function Home() {
               className={` card ${theme} rounded-lg h-auto w-72 mt-8`}
             >
               <img
-                src="/images/backend.png"
+                src={Backend}
                 alt=""
                 className="rounded-tr-lg rounded-tl-lg"
               />
@@ -234,7 +269,7 @@ function Home() {
               className={` card ${theme} rounded-lg h-auto w-72 mt-8`}
             >
               <img
-                src="/images/backend.png"
+                src={Backend}
                 alt=""
                 className="rounded-tr-lg rounded-tl-lg"
               />
@@ -257,7 +292,7 @@ function Home() {
               className={` card ${theme} rounded-lg h-auto w-72 mt-8`}
             >
               <img
-                src="/images/backend.png"
+                src={Backend}
                 alt=""
                 className="rounded-tr-lg rounded-tl-lg"
               />
