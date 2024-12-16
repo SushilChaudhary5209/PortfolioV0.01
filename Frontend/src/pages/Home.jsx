@@ -76,6 +76,7 @@ function Home() {
           <span className="px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
             <a
               href="https://drive.google.com/file/d/1Ro1-77jJhQJEKBY0wEV1eojfEwhvD_pE/view?usp=drive_link"
+              target="_blank"
               className="flex items-center gap-2"
             >
               <IoMdDownload /> Downloads CV
