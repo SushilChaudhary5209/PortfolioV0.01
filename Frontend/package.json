@@ -20,6 +20,7 @@
     "react-parallax-tilt": "^1.7.266",
     "react-router-dom": "^7.0.2",
     "react-simple-typewriter": "^5.0.1",
+    "react-social-media-bar": "^0.0.4",
     "tailwind-merge": "^2.5.5"
   },
   "devDependencies": {

@@ -4,6 +4,8 @@ import Tilt from "react-parallax-tilt";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { TextGenerateEffect } from "../components/ui/text-generate-effect";
+import Frontend from "../../images/frontend.png";
+import Backend from "../../images/backend.png";
 
 function Service() {
   const { theme } = useTheme();
@@ -13,7 +15,7 @@ function Service() {
   }, []);
 
   return (
-    <div className={`service ${theme} pt-20 md:pt-28 pb-14`}>
+    <div className={`service ${theme} pt-20 md:pt-28 pb-14 overflow-x-hidden`}>
       <p
         data-aos="fade-down"
         data-aos-duration="2000"
@@ -41,7 +43,7 @@ function Service() {
               className={`card ${theme} rounded-lg h-auto w-72`}
             >
               <img
-                src="/images/frontend.png"
+                src={Frontend}
                 alt=""
                 className="rounded-tr-lg rounded-tl-lg"
               />
@@ -65,7 +67,7 @@ function Service() {
               className={`card ${theme} rounded-lg h-auto w-72`}
             >
               <img
-                src="/images/backend.png"
+                src={Backend}
                 alt=""
                 className="rounded-tr-lg rounded-tl-lg"
               />

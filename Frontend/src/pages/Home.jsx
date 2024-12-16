@@ -29,7 +29,7 @@ function Home() {
   }, []);
 
   return (
-    <div className={`home ${theme}`}>
+    <div className={`home ${theme} overflow-x-hidden`}>
       <div className="flex flex-col-reverse justify-center items-center md:flex-row pt-4">
         <div className="w-full md:w-1/2 ps-1 md:ps-12 flex flex-col justify-center gap-3">
           <span className="text-4xl">👋</span>
@@ -67,7 +67,7 @@ function Home() {
       <div className="flex items-center pt-8 ps-[30%] md:ps-[20%]">
         <button
           data-aos="fade-right"
-          data-aos-offset="120"
+          data-aos-offset="50"
           data-aos-delay="50"
           data-aos-duration="2000"
           data-aos-easing="ease-in-sine"

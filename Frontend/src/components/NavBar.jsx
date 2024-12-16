@@ -64,7 +64,7 @@ import React, { useState } from 'react';
 import { IoReorderThreeOutline } from "react-icons/io5";
 import ThemeToggle from './ThemeToggle';
 import { useTheme } from './ThemeContext';
-import Profile from "../../images/profile.jpg";
+import Profile from "../../images/profile.png";
 
 const NavBar = ({ refs }) => {
     const [menuOpen, setMenuOpen] = useState(false);

@@ -54,6 +54,7 @@ import About from './pages/About';
 import Service from './pages/Service';
 import Contact from './pages/Contact';
 import NavBar from './components/NavBar';
+import FloatingSocialIcons from './components/FloatingSocialIcons';
 
 const AppContent = () => {
     const { theme } = useTheme();
@@ -84,6 +85,7 @@ const AppContent = () => {
             <div ref={contactRef}>
                 <Contact />
             </div>
+            <FloatingSocialIcons />
             <Footer />
         </div>
     );

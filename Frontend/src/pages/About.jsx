@@ -13,7 +13,7 @@ function About() {
   }, []);
 
   return (
-    <div className={`about ${theme} pt-20 md:pt-28`}>
+    <div className={`about ${theme} pt-20 md:pt-28 overflow-x-hidden`}>
       <p 
       data-aos="fade-down" 
       data-aos-duration="2000"
