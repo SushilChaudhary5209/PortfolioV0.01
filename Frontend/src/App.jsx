@@ -48,7 +48,7 @@ import React, { useRef } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider, useTheme } from './components/ThemeContext';
 import './App.css';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Service from './pages/Service';
@@ -86,7 +86,7 @@ const AppContent = () => {
                 <Contact />
             </div>
             <FloatingSocialIcons />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };
