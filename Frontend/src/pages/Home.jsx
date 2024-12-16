@@ -229,83 +229,91 @@ function Home() {
           </div>
         </div>
       </div>
-      <p
-        data-aos="fade-down"
-        data-aos-duration="2000"
-        className="p-4 pt-20 md:pt-28 text-4xl font-semibold"
-      >
-        PROJECT
-      </p>
-      <div className="flex flex-wrap justify-around">
-        <Tilt>
-          <div className="flex flex-col gap-8">
-            <div
-              data-aos="zoom-in"
-              data-aos-duration="2000"
-              data-aos-offset="150"
-              className={` card ${theme} rounded-lg h-auto w-72 mt-8`}
-            >
-              <img
-                src={Backend}
-                alt=""
-                className="rounded-tr-lg rounded-tl-lg"
-              />
-              <div className="px-2 pb-4 flex flex-col gap-6">
-                <p className="pt-2 text-2xl font-semibold">Backend Developer</p>
-                <p>
-                  Our backend services ensure robust, secure, and scalable
-                  solutions to power your applications efficiently.
-                </p>
+      <div className="overflow-hidden">
+        <p
+          data-aos="fade-down"
+          data-aos-duration="2000"
+          className="p-4 pt-20 md:pt-28 text-4xl font-semibold"
+        >
+          PROJECT
+        </p>
+        <div className="w-full flex flex-wrap justify-around">
+          <Tilt>
+            <div className="flex flex-col gap-8">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+                data-aos-offset="150"
+                className={` card ${theme} rounded-lg h-auto w-72 mt-8`}
+              >
+                <img
+                  src={Backend}
+                  alt=""
+                  className="rounded-tr-lg rounded-tl-lg"
+                />
+                <div className="px-2 pb-4 flex flex-col gap-6">
+                  <p className="pt-2 text-2xl font-semibold">
+                    Backend Developer
+                  </p>
+                  <p>
+                    Our backend services ensure robust, secure, and scalable
+                    solutions to power your applications efficiently.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </Tilt>
-        <Tilt>
-          <div className="flex flex-col gap-8">
-            <div
-              data-aos="zoom-in"
-              data-aos-duration="2000"
-              data-aos-offset="150"
-              className={` card ${theme} rounded-lg h-auto w-72 mt-8`}
-            >
-              <img
-                src={Backend}
-                alt=""
-                className="rounded-tr-lg rounded-tl-lg"
-              />
-              <div className="px-2 pb-4 flex flex-col gap-6">
-                <p className="pt-2 text-2xl font-semibold">Backend Developer</p>
-                <p>
-                  Our backend services ensure robust, secure, and scalable
-                  solutions to power your applications efficiently.
-                </p>
+          </Tilt>
+          <Tilt>
+            <div className="flex flex-col gap-8">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+                data-aos-offset="150"
+                className={` card ${theme} rounded-lg h-auto w-72 mt-8`}
+              >
+                <img
+                  src={Backend}
+                  alt=""
+                  className="rounded-tr-lg rounded-tl-lg"
+                />
+                <div className="px-2 pb-4 flex flex-col gap-6">
+                  <p className="pt-2 text-2xl font-semibold">
+                    Backend Developer
+                  </p>
+                  <p>
+                    Our backend services ensure robust, secure, and scalable
+                    solutions to power your applications efficiently.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </Tilt>
-        <Tilt>
-          <div className="flex flex-col gap-8">
-            <div
-              data-aos="zoom-in"
-              data-aos-duration="2000"
-              data-aos-offset="150"
-              className={` card ${theme} rounded-lg h-auto w-72 mt-8`}
-            >
-              <img
-                src={Backend}
-                alt=""
-                className="rounded-tr-lg rounded-tl-lg"
-              />
-              <div className="px-2 pb-4 flex flex-col gap-6">
-                <p className="pt-2 text-2xl font-semibold">Backend Developer</p>
-                <p>
-                  Our backend services ensure robust, secure, and scalable
-                  solutions to power your applications efficiently.
-                </p>
+          </Tilt>
+          <Tilt>
+            <div className="flex flex-col gap-8">
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+                data-aos-offset="150"
+                className={` card ${theme} rounded-lg h-auto w-72 mt-8`}
+              >
+                <img
+                  src={Backend}
+                  alt=""
+                  className="rounded-tr-lg rounded-tl-lg"
+                />
+                <div className="px-2 pb-4 flex flex-col gap-6">
+                  <p className="pt-2 text-2xl font-semibold">
+                    Backend Developer
+                  </p>
+                  <p>
+                    Our backend services ensure robust, secure, and scalable
+                    solutions to power your applications efficiently.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </Tilt>
+          </Tilt>
+        </div>
       </div>
     </div>
   );
