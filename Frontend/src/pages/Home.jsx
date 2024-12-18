@@ -34,7 +34,7 @@ function Home() {
         <div className="w-full md:w-1/2 ps-1 md:ps-12 flex flex-col justify-center gap-3">
           <span className="text-4xl">👋</span>
           <div className="px-4 md:ps-8 flex flex-col gap-8">
-            <p className={`fadeInScaleUp text-4xl font-semibold`}>
+            <p className={`fadeInScaleUp text-xl lg:text-4xl font-semibold`}>
               <span className="">Hi, I'm </span>
               <span className="text-[#64ffda]">{text}</span>
               <span className="text-[#64ffda]">

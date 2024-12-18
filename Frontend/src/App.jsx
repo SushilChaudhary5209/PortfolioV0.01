@@ -64,7 +64,7 @@ const AppContent = () => {
     const contactRef = useRef(null);
 
     return (
-        <div className={`app ${theme}`}>
+        <div className={`app ${theme} overflow-hidden`}>
             <NavBar
                 refs={{
                     home: homeRef,
